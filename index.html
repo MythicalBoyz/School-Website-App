@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/">
+          <img src="data:image/jpeg;base64,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" 
+               alt="Brand logovg"> 
+                  <span class="brand-logo-name">
+                  KENDRIYA VIDYALAYA SANGATHAN (KVS)
+                  </span>
+          </a>
+        <nav class="navbar">
+            <ul class="navbar-lists" id="myTopnav">
+                <li>
+                      <i class="fas fa-home"></i>
+                          <a class="navbar-link home-link" href="#">
+                              Home</a>
+                  </li>
+                <li>
+                      <i class="fas fa-user"></i>
+                          <a class="navbar-link about-link" 
+                           href="#about-us-section">
+                              About Us
+                          </a>
+                </li>
+                <li>
+                      <i class="fas fa-envelope"></i>
+                          <a class="navbar-link contact-link" 
+                           href="#contact-form">
+                          Contact Us
+                          </a>
+                  </li>
+                <li>
+                      <i class="fas fa-bullhorn"></i>
+                          <a class="navbar-link service-link" 
+                           href="#notice-bord-sction">
+                          Notice Board
+                          </a>
+                  </li>
+                <li><i class="fas fa-map-marked-alt"></i>
+                      <a class="navbar-link contact-link"
+                       href="#campus-on-map">
+                      Our Campus
+                      </a>
+                  </li>
+            </ul>
+            <a href="javascript:void(0);" 
+               class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="school-img-container">
+            <div class="img-container">
+                <img src=
+"https://tse2.mm.bing.net/th?id=OIP.pHnME534zhVoLwmzi-FBtwHaEK&pid=Api&P=0&h=180"
+                     alt="school img" class="school-img">
+                <h1 class="img-title">
+                  Welcome to KV IIT MADRAS
+                  </h1>
+            </div>
+        </div>
+
+        <section id="vision">
+            <h2 class="vision-heading">Our Vision</h2>
+            <p>At KV, we envision a learning community where every 
+                student is inspired to reach their full potential. We
+                strive to cultivate a nurturing environment that fosters
+                  curiosity, creativity, and critical thinking skills.
+                Our aim is to empower students to become lifelong learners,
+                  compassionate leaders, and responsible global citizens. 
+                  Through innovative teaching methods, personalized support,
+                  and a diverse range of opportunities
+            </p>
+        </section>
+
+        <div class="main-notice-section" 
+             id="notice-bord-sction">
+            <div class="notice-container">
+                <div class="notice-bord">
+                    <h2 class="notice-bord-heading">
+                      Campus Notice Board
+                      </h2>
+                    <div>
+                        <ul>
+                            <li>
+                                <i>April 1, 2023:</i>
+                                      Inauguration ceremony for 
+                                      the new academic year.
+                                      <span class="new-text">New</span>
+                            </li>
+                            <li>
+                                <i>April 15, 2023:</i> 
+                                      Science fair showcasing 
+                                      innovative student projects. 
+                                      <span class="new-text">New</span>
+                            </li>
+                            <li>
+                                <i>April 30, 2023:</i> 
+                                      Cultural extravaganza featuring
+                                      dance, music, and drama performances. 
+                                      <span class="new-text">New</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <h2 class="event-heading">Upcoming Events</h2>
+                    <div class="event-details">
+                        <div class="event">
+                            <h3>Event Name 1</h3>
+                            <p>Date: April 15, 2024</p>
+                            <p>Time: 9:00 AM - 12:00 PM</p>
+                            <p>Location: School Auditorium</p>
+                            <p>
+                              <strong>Description:</strong> 
+                              Quiz competition.
+                              </p>
+                        </div>
+                        <div class="event">
+                            <h3>Event Name 2</h3>
+                            <p>Date: April 20, 2024</p>
+                            <p>Time: 2:00 PM - 5:00 PM</p>
+                            <p>Location: Sports Ground</p>
+                            <p>
+                                  <strong>Description:</strong> 
+                                  Solo Singing Compitetion
+                              </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about-us-section">
+            <div class="about-us-container">
+                <h2 class="aboutus-heading">About Us</h2>
+                <p>
+                    <strong class="subheading"> 
+                          Company Profile and Brand: 
+                      </strong>
+                      KVS believes in imparting knowledge/values and nurturing the talent,
+                       enthusiasm and creativity of its students for seeking excellence through high-quality educational endeavours.
+                </p>
+            </div>
+        </section>
+
+        <section class="our-school-map" id="campus-on-map">
+            <h2 class="location-heading">
+                  Find Our Location On Map
+              </h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6721456567925!2d80.23046917586157!3d12.992809187324523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526781d6d63ab9%3A0xaeb669fbe3f4fd3a!2sKendriya%20Vidyalaya%20IIT%20Chennai!5e0!3m2!1sen!2sin!4v1719135882100!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="contact-form">
+            <h2 class="contact-form-heading">
+              Contact Us Form
+              </h2>
+            <div class="container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">
+                          Full Name
+                          </label>
+                        <input type="text" id="fullName" 
+                               name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"
+                               name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" 
+                               name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" 
+                                  required>
+                          </textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My School. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
